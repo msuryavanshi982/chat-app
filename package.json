@@ -1,0 +1,17 @@
+{
+  "name": "talkkee",
+  "version": "1.0.0",
+  "description": "This is a real time chat app",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server"
+  },
+  "keywords": [],
+  "author": "MEENAKSHI LODHI",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20",
+    "socket.io": "^4.5.4"
+  }
+}
