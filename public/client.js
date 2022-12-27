@@ -1,11 +1,9 @@
 const socket = io();
-
 let nameOfuser;
 let textArea = document.querySelector('#textarea');
 let messageArea = document.querySelector('.message_area');
-
 do {
-    nameOfuser = prompt('Please enter your name');
+    nameOfuser = prompt('Please enter your name')
 } while (!nameOfuser)
 
 textArea.addEventListener('keyup', (e) => {
@@ -27,10 +25,10 @@ function sendMessage(message) {
 }
 
 function appendMessage(msg, type) {
-    let mainDiv = document.createElement('div') 
-    let className = type; //type tells the type of message either it is incoming or outgoing
+    let mainDiv = document.createElement('div')
+    let className = type;
     mainDiv.classList.add(className, 'message')
-  
+
     let markUp = `
        <h4>${msg.user}</h4>
        <p>${msg.message}</p>
@@ -38,7 +36,7 @@ function appendMessage(msg, type) {
     mainDiv.innerHTML = markUp
     messageArea.appendChild(mainDiv)
 }
-//receive the message
+
 socket.on('message', (msg) => {
     appendMessage(msg, 'incoming')
     scrollToBottom();

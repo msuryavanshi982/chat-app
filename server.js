@@ -12,11 +12,11 @@ app.get('/', (req, res) => {
 })
 
 //-socket setUp in server.js-//
-const io=require('socket.io')(http);
-io.on('connection',(socket)=>{
+const io = require('socket.io')(http);
+io.on('connection', (socket) => {
     console.log('Connected')
-    
-    socket.on('message',(msg)=>{
-         socket.broadcast.emit('message',msg)
-    }); 
+
+    socket.on('message', (msg) => {
+        socket.broadcast.emit('message', msg)
+    });
 }); 

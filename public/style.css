@@ -10,23 +10,22 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #99cef0;
+    background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
     font-family: 'Roboto', sans-serif;
-    height:100vh;
-    
+    height: 100vh;
+
 }
 
 section.chat_section {
     width: 700px;
-    /*this width is used for mobile screen*/
     max-width: 90%;
-    background: rgb(151, 246, 180);
-    box-shadow:2px 0px 8px 3px #B2B2B2;
+    background-image: linear-gradient(to right top, #ecd1e0, #e7d0e4, #e1cfe9, #d8cfed, #ced0f0, #c5d3f3, #bcd5f6, #b2d8f6, #aadef6, #a4e3f3, #a2e7ee, #a5ebe6);
+    box-shadow: 2px 0px 8px 3px #B2B2B2;
 }
 
 .brand {
     padding: 12px;
-    background: #b1abab;
+    background: #f1f1f1;
     display: flex;
     align-items: center;
 }
@@ -49,39 +48,37 @@ section.chat_section {
 
 #textarea {
     width: 100%;
-    border: solid rgb(134, 132, 132);
-    border-radius: 2%;
+    border: none;
     padding: 20px;
     font-size: 16px;
     outLine: none;
-    background: #f0e6fe;
+    background: #f8f7f7;
 }
 
 .message {
-    padding: 10px;
-    border-radius: 6px;
+    padding: 12px;
+    border-radius: 25px;
     margin-bottom: 40px;
-    max-width: 100px;
+    max-width: 300px;
     position: relative;
 }
 
 .incoming {
     background: #d79ceb;
-    color: #fff;
-    border-radius: 5px;
+    color: rgb(242, 4, 4);
 }
 
 .outgoing {
     background: #e9eafd;
-    color: #787986;
+    color: #0b03f8;
     margin-left: auto;
-    border-radius: 8px;
 }
 
 .message h4 {
     position: absolute;
     top: -20px;
     left: 0;
-    color: black;
+    color: rgb(6, 6, 6);
     font-size: 14px;
+
 }
